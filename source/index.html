@@ -3,9 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="icon" href="favicons/192.png"><!-- 192×192 -->
+  <link rel="icon" href="favicons/512.png"><!-- 512×512 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,6 +20,14 @@
     <nav class="navigation wrapper">
       <a class="navigation__logo logo" href="index.html">
         <picture>
+ module3-task1
+          <source media="(min-width: 1440px)" width="60" height="50" type="image/svg+xml" srcset="images/logo/logo-desctop.svg">
+          <source media="(min-width: 768px)" width="33" height="38" type="image/svg+xml" srcset="images/logo/logo-tablet.svg">
+          <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Energy">
+        </picture>
+        <img class="logo__image-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип текст кот Energy">
+      </a>
+
           <img class="logo__image" src="#" width="33" height="38" alt="Логотип кота Energy">
         </picture>
         <img class="logo__image-text" src="#" width="101" height="18" alt="Логотип текст кот Energy">
@@ -21,6 +35,7 @@
       <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+ master
       <div class="navigation__menu">
         <button class="navigation__menu-close" type="button">
           <span class="visually-hidden">Закрыть меню</span>
@@ -43,7 +58,15 @@
     <section class="promo">
       <h1 class="promo__title">Функциональное<br> питание для котов</h1>
       <p class="promo__description">Занялся собой? Займись котом!</p>
+ module3-task1
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo/promo-cat@1x.png 1x, images/promo/promo-cat@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo/promo-cat-tablet@1x.png 1x, images/promo/promo-cat-tablet@2x.png 2x">
+        <img class=" promo__image" src="images/promo/promo-cat-mobile@2x.png" width="280" height="270" srcset="images/promo/promo-cat-mobile@1x.png 1x, images/promo/promo-cat-mobile@2x.png 2x" alt="Корм для котов с курицей">
+      </picture>
+
       <img class="promo__image" src="#" width="280" height="270" alt="Корм для котов с курицей">
+ master
       <button class="promo__button button" type="button">Подобрать программу</button>
     </section>
     <section class="programs wrapper">
@@ -93,8 +116,19 @@
       </div>
       <span class="example__cash">Затраты на питание:<span>15 000 РУБ.</span></span>
       <div class="example__slider">
+ module3-task1
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/slider/slider-image-1-tablet@1x.jpg 1x, images/slider/slider-image-1-tablet@2x.jpg 2x">
+          <img class="example__slider-image example__slider-image--before" src="images/slider/slider-image-1-mobile@2x.jpg" srcset="images/slider/slider-image-1-mobile@1x.jpg 1x, images/slider/slider-image-1-mobile@2x.jpg 2x" width="280" height="256" alt="Кот с лишнем весом">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/jpg" srcset="images/slider/slider-image-2-tablet@1x.jpg 1x, images/slider/slider-image-2-tablet@2x.jpg 2x">
+          <img class="example__slider-image example__slider-image--after" src="images/slider/slider-image-2-mobile@2x.jpg" srcset="images/slider/slider-image-2-mobile@1x.jpg 1x, images/slider/slider-image-2-mobile@2x.jpg 2x" width="280" height="256" alt="Стройный кот">
+        </picture>
+
         <img class="example__slider-image example__slider-image--before" src="#" width="280" height="256" alt="Кот с лишнем весом">
         <img class="example__slider-image example__slider-image--after" src="#" width="280" height="256" alt="Стройный кот">
+ master
         <button class="example__button" type="button"><span class="visually-hidden">Кот изменят вес</span></button>
       </div>
       </div>
@@ -106,7 +140,15 @@
         Конюшенная, д. 19/8<br>
         <span>Санкт-Петербург</span>
       </address>
+ module3-task1
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/map-desctop@1x.png 1x, images/map/map-desctop@2x.png 2x,">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x ">
+        <img class="contacts__map-image" src="images/map/map-mobile@2x.png" srcset="images/map/map-mobile@1x.png 1x, images/map/map-mobile@2x.png 2x" width="320" height="362" alt="метка на карте для сотрудничества">
+      </picture>
+
       <img class="contacts__map-image" src="#" width="320" height="362" alt="метка на карте для сотрудничества">
+ master
       </div>
     </section>
     <section class="subscribe">
@@ -122,7 +164,11 @@
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__logo" href="index.html">
+ module3-task1
+        <img class="footer__logo-img" src="images/logo/logo-text.svg" width="128" height="24" alt="Логотип текст кот Energy">
+
         <img class="footer__logo-img" src="#" width="128" height="24" alt="Логотип текст кот Energy">
+ master
       </a>
       <ul class="socials">
         <li class="socials__item">
