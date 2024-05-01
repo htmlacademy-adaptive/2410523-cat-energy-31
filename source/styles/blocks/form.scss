@@ -1,0 +1,14 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.form__email {
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-dark-grey;
+  font-family: $secondary-font;
+}
+
+.form__button {
+  font-size: 20px;
+  line-height: 26px;
+}

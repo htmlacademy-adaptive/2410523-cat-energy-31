@@ -1,0 +1,13 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.gift {
+  color: $color-dark;
+  line-height: 16px;
+  font-size: 20px;
+}
+
+.gift-description {
+  text-align: center;
+  /* color:$color-light */
+}

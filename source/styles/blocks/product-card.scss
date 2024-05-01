@@ -1,0 +1,14 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.product-card {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product-card__title {
+  font-family: $secondary-font;
+  color: $color-dark-special;
+}
+
+

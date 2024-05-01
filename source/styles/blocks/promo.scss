@@ -1,0 +1,22 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.promo {
+  background-color: $color-light-grey;
+  color: $color-dark;
+}
+
+.promo__title {
+  line-height: 36px;
+  font-size: 36px;
+  text-align: center;
+  color: $color-light;
+}
+
+.promo__description {
+  font-family: $secondary-font;
+  line-height: 14px;
+  font-size: 14px;
+  color: $color-light;
+}
+

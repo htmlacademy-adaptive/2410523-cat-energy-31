@@ -1,0 +1,19 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.subscribe {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-dark;
+  text-align: center;
+  font-family: $secondary-font;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.subscribe__description {
+  font-weight: 700;
+}

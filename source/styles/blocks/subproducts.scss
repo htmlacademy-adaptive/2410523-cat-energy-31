@@ -1,0 +1,23 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.subproducts__title {
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.subproducts__list {
+  list-style-type: none;
+}
+
+.subproducts__item {
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.subproducts__heading {
+  line-height: 16px;
+  font-size: 16px;
+  color: $color-dark-special;
+  font-weight: 700;
+}

@@ -1,6 +1,7 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
-  font-family: $secondary-font;
+  background-color: $color-light;
+  color: $color-dark;
 }

@@ -1,0 +1,13 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.working__title {
+  color: $color-dark;
+  line-height: 40px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.working__list {
+  list-style-type: none;
+}

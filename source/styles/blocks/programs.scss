@@ -1,0 +1,24 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.programs {
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+.programs__card {
+  background-color: $color-light-grey;
+}
+
+.programs__card-title {
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-dark;
+}
+
+.programs__card-link {
+  color: $color-dark;
+  line-height: 16px;
+  font-size: 16px;
+  text-align: center;
+}

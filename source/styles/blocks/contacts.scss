@@ -1,0 +1,16 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.contacts__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-grey;
+}

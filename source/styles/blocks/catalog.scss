@@ -1,0 +1,22 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-dark;
+}
+
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__prices-title {
+  color: #111111;
+  font-size: 16px;
+}
+
+.catalog__prices-button {
+  background-color: $color-base-grey;
+  color: $color-dark-grey;
+}

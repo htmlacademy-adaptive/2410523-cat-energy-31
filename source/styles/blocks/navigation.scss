@@ -1,3 +1,22 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .navigation {
-  background-color: #ff0000;
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+.navigation__menu {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $secondary-font;
+}
+
+.navigation__menu-list {
+  list-style: none;
+}
+
+.navigation__menu-link {
+  color: $color-dark;
 }
