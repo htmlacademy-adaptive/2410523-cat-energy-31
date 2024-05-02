@@ -2,10 +2,10 @@
 @use "../common/variables.scss";
 
 .example {
-  background-color: $color-light-grey;
+  background-color: $color-light-secondary;
 }
 
-.example__tittle {
+.example__title {
   line-height: 36px;
   font-size: 40px;
   color: $color-dark;
