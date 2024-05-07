@@ -1,1 +1,13 @@
-/* Тут будет код */
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.logo__image,
+.logo__image-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

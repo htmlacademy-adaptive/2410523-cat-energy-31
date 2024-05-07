@@ -1,7 +1,30 @@
 .button {
   border-style: none;
-  color: $color-light;
   font-family: $secondary-font;
   text-transform: uppercase;
   text-align: center;
+}
+
+.button--primary {
+  color: $color-light;
+  background-color: $color-light-special;
+
+  &:hover {
+    background-color: $color-hover-special;
+  }
+
+  &:active {
+    background-color: $color-hover-special;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  background-color: $color-light-primary;
+  color: $color-dark-primary;
+
+  &:hover,
+  &:active {
+    background-color: $color-hover-other;
+  }
 }

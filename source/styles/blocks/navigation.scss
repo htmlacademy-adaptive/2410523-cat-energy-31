@@ -4,6 +4,8 @@
 .navigation {
   background-color: $color-light;
   color: $color-dark;
+  display: flex;
+  align-items: center;
 }
 
 .navigation__menu {
@@ -11,6 +13,7 @@
   font-size: 18px;
   line-height: 24px;
   font-family: $secondary-font;
+  display: flex;
 }
 
 .navigation__menu-list {
@@ -19,4 +22,39 @@
 
 .navigation__menu-link {
   color: $color-dark;
+}
+
+.navigation__open {
+  width: 28px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#burger");
+  background-color: $color-dark;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.navigation__close {
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#close");
+  background-color: $color-dark;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

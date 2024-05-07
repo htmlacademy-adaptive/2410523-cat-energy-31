@@ -12,12 +12,22 @@
   text-align: center;
 }
 
+.example__list {
+  display: flex;
+  gap: 32px;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: $border-style-primary;
+  width: 124px;
+}
+
 .example__item-title {
-  font-family: $secondary-font;
-  color: $color-dark;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
 }
 
 .example__item-text {
@@ -30,4 +40,63 @@
   line-height: 20px;
   color: $color-dark;
   text-align: center;
+}
+
+.example__slider {
+  display: flex;
+}
+
+.example__button {
+  width: 4px;
+  height: 256px;
+  background-color: $color-socials;
+  display: block;
+  border-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover,
+  &:hover::after {
+    background-color: $color-light-special;
+  }
+
+  &:hover::before {
+    border-color: $color-light-special;
+  }
+
+
+  &:active,
+  &:active::before,
+  &:active::after {
+    opacity: 0.6;
+  }
+}
+
+.example__button::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-light;
+  border: 2px solid $color-socials;
+  background-position: center;
+  position: absolute;
+  left: -18px;
+  top: 40%;
+}
+
+.example__button::after {
+  content: "";
+  display: block;
+  mask-image: url("../../icons/stack.svg#slider-arrow");
+  background-color: $color-socials;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 44%;
+  transform: translate(-36%);
 }

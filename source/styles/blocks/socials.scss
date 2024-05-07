@@ -3,4 +3,46 @@
 
 .socials {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+.socials__link {
+  width: 27px;
+  height: 17px;
+
+  &:hover::after {
+    background-color: $color-light-special;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.socials__link--vk::after {
+  content: "";
+  width: 27px;
+  height: 17px;
+  mask-image: url("../../icons/stack.svg#vkontakte");
+  background-color: $color-socials;
+  display: block;
+}
+
+.socials__link--youtube::after {
+  content: "";
+  width: 27px;
+  height: 17px;
+  mask-image: url("../../icons/stack.svg#youtube");
+  background-color: $color-socials;
+  display: block;
+}
+
+.socials__link--tg::after {
+  content: "";
+  width: 27px;
+  height: 17px;
+  mask-image: url("../../icons/stack.svg#telegram");
+  background-color: $color-socials;
+  display: block;
 }

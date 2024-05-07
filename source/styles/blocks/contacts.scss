@@ -1,6 +1,11 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts__description {
   font-size: 16px;
   line-height: 20px;
@@ -13,4 +18,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-primary;
+}
+
+.contacts__map-image {
+  height: 100%;
 }

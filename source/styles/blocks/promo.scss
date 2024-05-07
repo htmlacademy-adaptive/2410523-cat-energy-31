@@ -2,7 +2,7 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-color: $color-light-secondary;
+  background-color: $color-light-special;
   color: $color-dark;
 }
 
@@ -18,5 +18,7 @@
   line-height: 14px;
   font-size: 14px;
   color: $color-light;
+  text-transform: uppercase;
+  text-align: center;
 }
 

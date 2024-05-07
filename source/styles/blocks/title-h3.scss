@@ -1,1 +1,8 @@
-/* Тут будет код */
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.title-h3 {
+  font-family: $secondary-font;
+  color: $color-dark-special;
+  text-align: center;
+}

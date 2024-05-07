@@ -1,13 +1,65 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.working__title {
-  color: $color-dark;
-  line-height: 40px;
-  font-size: 36px;
-  text-align: center;
-}
-
 .working__list {
   list-style-type: none;
+}
+
+.working__item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.working__item::before {
+  content: "";
+  background-color: $color-light-special;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.working__item--useful::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#sheet");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.working__item--powder::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#powder");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.working__item--functional::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#knife-fork");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.working__item--upgrade::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#alarm");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.working__title {
+  line-height: 40px;
+  font-size: 36px;
+}
+
+.working__item-text {
+  display: flex;
 }

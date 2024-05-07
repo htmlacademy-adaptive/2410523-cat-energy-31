@@ -4,3 +4,39 @@
 .footer {
   background-color: $color-light-primary;
 }
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__developer-text {
+  display: flex;
+  align-items: center;
+  color: $color-dark-primary;
+
+  &:hover::after {
+    background-color: $color-light-special;
+  }
+}
+
+.footer__developer-text::after {
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-color: $color-socials;
+  mask-image: url("../../icons/stack.svg#developer");
+  mask-size: 27px 34px;
+  mask-position: center;
+  display: block;
+}

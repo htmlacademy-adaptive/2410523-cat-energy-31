@@ -6,6 +6,21 @@
   line-height: 30px;
   color: $color-dark-primary;
   font-family: $secondary-font;
+  border: $border-style-secondary;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: $border-style-focus;
+    border-color: $color-light;
+  }
+
+  &:invalid {
+    outline: $border-style-error;
+    border-color: $color-light;
+  }
 }
 
 .form__button {
