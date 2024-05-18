@@ -34,10 +34,16 @@
   }
 }
 
+.footer__developer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__developer-text {
   display: flex;
   align-items: center;
   color: $color-dark-primary;
+  margin-right: auto;
 
 
   &:hover::after {
@@ -54,4 +60,5 @@
   mask-size: 27px 34px;
   mask-position: center;
   display: block;
+  margin-left: auto;
 }

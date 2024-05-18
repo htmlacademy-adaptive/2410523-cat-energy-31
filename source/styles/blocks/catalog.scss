@@ -11,63 +11,13 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-dark;
-  padding-left: 30px;
-  margin-bottom: 84px;
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
 }
-
 
 .catalog__list {
   list-style-type: none;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px; //разобратьсяс отступами
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-  }
 }
 
 .catalog__prices-title {
   color: #111111;
   font-size: 16px;
 }
-
-.catalog__prices-title::before {
-  content: "";
-  display: block;
-  background-image: url("/icons/stack.svg#plus");
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-.catalog__item {
-  width: 320px;
-  padding: 20px 20px 25px;
-
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    padding: 0;
-    background-color: $color-light-primary;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-  }
-}
-

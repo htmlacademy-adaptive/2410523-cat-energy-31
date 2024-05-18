@@ -5,28 +5,12 @@
   color: $color-dark;
   line-height: 16px;
   font-size: 20px;
-  background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-2-mob@1x.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 707px;
-    background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-2-tabl@1x.png");
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-2-desktop@2x.png");
-    margin-left: auto;
-  }
+  background-color: $color-light-special; //временный цвет
 }
 
 .gift-description {
   text-align: center;
-  color: $color-light;
+  /* color:$color-light */
 }
 
 .gift-description::before {
@@ -37,8 +21,4 @@
   display: block;
   background-position: center;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    background-position: left;
-  }
 }

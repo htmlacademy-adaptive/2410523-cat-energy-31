@@ -2,50 +2,8 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-image: linear-gradient(to left, #64a83c, rgba(98, 165, 58, 0.85)), url("../../images/background/background-cat @2x.png");
-  background-repeat: no-repeat;
-  background-size: auto 302px;
-  background-position: center top;
-  display: flex; //убрать флекс
-  flex-flow: column;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
-    background-color: $color-light;
-    color: $color-dark;
-    display: flex;
-    flex-direction: column;
-    background-image: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    background-image: none;
-    grid-template-areas:
-      "title  img"
-      "text   img"
-      "button img";
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-image: linear-gradient(to left, #64a83c, #62a53a), url("../../images/background/background-cat-desktop@2x.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    width: 720px;
-    height: 680px;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    display: block;
-  }
+  background-color: $color-light-special;
+  color: $color-dark;
 }
 
 .promo__title {

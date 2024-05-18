@@ -39,72 +39,11 @@
   font-size: 18px;
   line-height: 24px;
   font-family: $secondary-font;
-  display: block;
-  position: static;
-  left: 0;
-  top: 42px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    min-width: 436px;
-    line-height: 24px;
-    font-size: 18px;
-    position: static;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
-    position: static;
-    min-width: 475px;
-  }
+  display: flex;
 }
-
-.navigation__menu--open {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-}
-
 
 .navigation__menu-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    min-width: 436px;
-    position: static;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 475px;
-    margin-left: auto;
-  }
-}
-
-.navigation__menu-item {
-  padding: 22px 30px 24px;
-
-
-  @media (max-width: 767px) {
-    border-bottom: $border-style #e6e6e6;
-    width: calc(100% + 10px);
-  }
-
-  &:nth-child(1) {
-    border-top: $border-style #e6e6e6;
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
-  }
 }
 
 .navigation__menu-link {
