@@ -32,10 +32,10 @@
       <div class="navigation__menu">
         <ul class="navigation__menu-list">
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link navigation__menu-link--current" href="#">Главная</a>
+            <a class="navigation__menu-link " href="#">Главная</a>
           </li>
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link" href="#">Каталог продукции</a>
+            <a class="navigation__menu-link navigation__menu-link--current" href="#">Каталог продукции</a>
           </li>
           <li class="navigation__menu-item">
             <a class="navigation__menu-link" href="#">Подбор продукции</a>
@@ -45,7 +45,7 @@
     </nav>
   </header>
   <main class="main-wrapper">
-    <section class="catalog">
+    <section class="catalog wrapper">
       <h1 class="catalog__title title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item product-card">
@@ -248,47 +248,49 @@
         </li>
       </ul>
     </section>
-    <section class="subproducts">
+    <section class="subproducts wrapper">
       <h2 class="subproducts__title title title-h2">Дополнительные товары</h2>
-      <ul class="subproducts__list">
-        <li class="subproducts__item">
-          <a class="subproducts__link" href="#">
-            <h3 class="subproducts__heading title title-h3">Сахарозаменитель</h3>
-          </a>
-          <p class="subproducts__part-item">1 упаковка (100 г)</p>
-          <p class="subproducts__part-price">200 &#8381</p>
-          <a class="subproducts__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="subproducts__item">
-          <a class="subproducts__link" href="#">
-            <h3 class="subproducts__heading title title-h3">Питьевая вода</h3>
-          </a>
-          <p class="subproducts__part-item">5 литров</p>
-          <p class="subproducts__part-price">50 &#8381</p>
-          <a class="subproducts__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="subproducts__item">
-          <a class="subproducts__link" href="#">
-            <h3 class="subproducts__heading title title-h3">Молоко</h3>
-          </a>
-          <p class="subproducts__part-item">1 литр</p>
-          <p class="subproducts__part-price">100 &#8381</p>
-          <a class="subproducts__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="subproducts__item">
-          <a class="subproducts__link" href="#">
-            <h3 class="subproducts__heading title title-h3">Витамины</h3>
-          </a>
-          <p class="subproducts__part-item">1 упаковка (30 г)</p>
-          <p class="subproducts__part-price">300 &#8381</p>
-          <a class="subproducts__button button button--primary" href="#">Заказать</a>
-        </li>
-      </ul>
-      <div class="gift">
-        <p class="gift-description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+      <div class="subproducts__wrapper">
+        <ul class="subproducts__list">
+          <li class="subproducts__item">
+            <a class="subproducts__link" href="#">
+              <h3 class="subproducts__heading title title-h3">Сахарозаменитель</h3>
+            </a>
+            <p class="subproducts__part-item">1 упаковка (100 г)</p>
+            <p class="subproducts__part-price">200 &#8381</p>
+            <a class="subproducts__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="subproducts__item">
+            <a class="subproducts__link" href="#">
+              <h3 class="subproducts__heading title title-h3">Питьевая вода</h3>
+            </a>
+            <p class="subproducts__part-item">5 литров</p>
+            <p class="subproducts__part-price">50 &#8381</p>
+            <a class="subproducts__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="subproducts__item">
+            <a class="subproducts__link" href="#">
+              <h3 class="subproducts__heading title title-h3">Молоко</h3>
+            </a>
+            <p class="subproducts__part-item">1 литр</p>
+            <p class="subproducts__part-price">100 &#8381</p>
+            <a class="subproducts__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="subproducts__item">
+            <a class="subproducts__link" href="#">
+              <h3 class="subproducts__heading title title-h3">Витамины</h3>
+            </a>
+            <p class="subproducts__part-item">1 упаковка (30 г)</p>
+            <p class="subproducts__part-price">300 &#8381</p>
+            <a class="subproducts__button button button--primary" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="gift">
+          <p class="gift-description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+        </div>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe wrapper">
       <h2 class="subscribe__title title title-h2 title-h2--width-border">Акции и новинки</h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">

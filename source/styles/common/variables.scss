@@ -1,6 +1,9 @@
 $primary-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Arial", sans-serif;
 
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 $color-dark: #000000;
 $color-dark-special: #222222;
 $color-dark-primary: #444444;
@@ -12,10 +15,8 @@ $color-light-special: #68b738;
 $color-hover-special:#5eaa2f;
 $color-hover-other:#ebebeb;
 
-
-//border
-
 $border-style-primary: 1px solid #cdcdcd;
 $border-style-secondary: 1px solid #e7e7e7;
+$border-style: 1px solid;
 $border-style-focus: 2px solid #444444;
 $border-style-error: 2px solid #ff8282;

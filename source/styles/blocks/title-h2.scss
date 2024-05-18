@@ -5,4 +5,9 @@
   font-family: $secondary-font;
   color: $color-dark;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }

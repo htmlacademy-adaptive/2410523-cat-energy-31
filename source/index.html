@@ -21,15 +21,14 @@
       <a class="navigation__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" width="60" height="50" type="image/svg+xml" srcset="images/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="33" height="38" type="image/svg+xml" srcset="images/logo/logo-tablet.svg">
           <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Energy">
         </picture>
         <img class="logo__image-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип текст кот Energy">
       </a>
-      <button class="navigation__open navigation__close" type="button">
+      <button class="navigation__close navigation__open " type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <div class="navigation__menu">
+      <div class="navigation__menu--open navigation__menu ">
         <ul class="navigation__menu-list">
           <li class="navigation__menu-item">
             <a class="navigation__menu-link navigation__menu-link--current" href="#">Главная</a>
@@ -86,21 +85,21 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__tittle title title-h2">Живой пример</h2>
+      <h2 class="example__title title title-h2">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
         При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="example__list">
         <div class="example__item">
-          <span class="example__item-title">5 кг</span>
+          <span class="example__item-title title-h3">5 кг</span>
           <span class="example__item-text">снижение веса</span>
         </div>
         <div class="example__item">
-          <span class="example__item-title">60 дней</span>
+          <span class="example__item-title title-h3">60 дней</span>
           <span class="example__item-text">затрачено времени</span>
         </div>
       </div>
-      <span class="example__cash">Затраты на питание:<span>15 000 РУБ.</span></span>
+      <span class="example__cash title-h3">Затраты на питание:<span>15 000 РУБ.</span></span>
       <div class="example__slider">
         <picture>
           <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-image-1-tablet@1x.png 1x, images/slider/slider-image-1-tablet@2x.png 2x">
@@ -115,12 +114,14 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Адрес для сотрудничества</h2>
-      <p class="contacts__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
-      <address class="contacts__text">ул. Большая<br>
-        Конюшенная, д. 19/8<br>
-        <span>Санкт-Петербург</span>
-      </address>
+      <div class="contacts__wrapper wrapper">
+        <h2 class="visually-hidden">Адрес для сотрудничества</h2>
+        <p class="contacts__description title-h3">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <address class="contacts__text">ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          <span>Санкт-Петербург</span>
+        </address>
+      </div>
       <picture>
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x,">
         <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x ">

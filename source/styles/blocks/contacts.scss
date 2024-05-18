@@ -2,8 +2,25 @@
 @use "../common/variables.scss";
 
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
+
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1440px;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 26px 20px;
 }
 
 .contacts__description {
@@ -12,14 +29,46 @@
   color: #111111;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* z-index: 2;
+      position: absolute;
+      background-color: $color-light; */
+  }
 }
 
 .contacts__text {
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-primary;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* z-index: 2;
+      position: absolute;
+      background-color: $color-light; */
+  }
 }
 
 .contacts__map-image {
   height: 100%;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    // width: 768px;
+    //height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //width: 1440px;
+  }
 }

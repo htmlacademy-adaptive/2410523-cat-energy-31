@@ -4,6 +4,7 @@
 .product-card {
   font-size: 16px;
   line-height: 20px;
+  position: relative;
 }
 
 .product-card__title {
@@ -11,4 +12,13 @@
   color: $color-dark-special;
 }
 
+.product-card__button {
+  width: 280px;
+  display: inline-block;
+}
 
+.product-card__image {
+  position: absolute;
+  display: block;
+  bottom: 0;
+}

@@ -4,51 +4,131 @@
 .programs {
   background-color: $color-light;
   color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__card {
   background-color: $color-light-secondary;
+  margin-bottom: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  grid-template-areas:
+    "before title"
+    "text   text"
+    "link   link";
+  align-items: start;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    width: 708px;// верно ли ?
+    grid-template-columns: 340px 1fr;
+    grid-template-areas:
+      "title before"
+      "text  before"
+      "link  before";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__card--slim::before {
   content: "";
   width: 50px;
   height: 53px;
-  display: block;
-  background-image: url("../../icons/stack.svg#cat-sitting");
+  display: flex;
+  background-image: url("/icons/stack.svg#cat-sitting");
+  background-position: center;
+  grid-area: before;
+  align-self: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programs__card--set::before {
   content: "";
-  width: 50px;
-  height: 53px;
+  width: 67px;
+  height: 50px;
   display: block;
-  background-image: url("../../icons/stack.svg#cat-stand");
+  background-image: url("/icons/stack.svg#cat-stand");
+  grid-area: before;
+  align-self: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .programs__card-title {
   font-size: 24px;
   line-height: 37px;
-  position: relative;
+  grid-area: title;
+  justify-self: start;
 }
 
 .programs__card-description {
-  position: relative;
+  grid-area: text;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+    border: none;
+  }
+}
+
+.programs__card-description::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin-top: 23px;
 }
 
 .programs__card-link {
-  color: $color-dark;
+  color: inherit;
   line-height: 16px;
   font-size: 16px;
   text-align: center;
+  text-transform: uppercase;
   display: flex;
   gap: 15px;
   align-items: center;
+  grid-area: link;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  font-family: $secondary-font;
 
   &:hover::after {
     width: 32px;
     height: 12px;
-    mask-image: url("../../icons/stack.svg#cursor-hover");
+    mask-image: url("/icons/stack.svg#cursor-hover");
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-dark;
@@ -63,7 +143,7 @@
 
 .programs__card-link::after {
   content: "";
-  mask-image: url("../../icons/stack.svg#cursor");
+  mask-image: url("/icons/stack.svg#cursor");
   display: block;
   width: 24px;
   height: 12px;

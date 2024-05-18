@@ -5,6 +5,12 @@
   list-style-type: none;
   display: flex;
   gap: 24px;
+  padding: 0;
+  border-bottom: $border-style #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .socials__link {
@@ -20,29 +26,22 @@
   }
 }
 
-.socials__link--vk::after {
+.socials__link::after {
   content: "";
   width: 27px;
   height: 17px;
-  mask-image: url("../../icons/stack.svg#vkontakte");
   background-color: $color-socials;
   display: block;
+}
+
+.socials__link--vk::after {
+  mask-image: url("/icons/stack.svg#vkontakte");
 }
 
 .socials__link--youtube::after {
-  content: "";
-  width: 27px;
-  height: 17px;
-  mask-image: url("../../icons/stack.svg#youtube");
-  background-color: $color-socials;
-  display: block;
+  mask-image: url("/icons/stack.svg#youtube");
 }
 
 .socials__link--tg::after {
-  content: "";
-  width: 27px;
-  height: 17px;
-  mask-image: url("../../icons/stack.svg#telegram");
-  background-color: $color-socials;
-  display: block;
+  mask-image: url("/icons/stack.svg#telegram");
 }
