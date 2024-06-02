@@ -2,29 +2,92 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-color: $color-light-special;
-  color: $color-dark;
+  background-image: linear-gradient(to left, #64a83c, rgba(98, 165, 58, 0.85)), url("../../images/background/background-cat @2x.png");
+  background-repeat: no-repeat;
+  background-size: auto 302px;
+  background-position: center top;
+  display: flex; //убрать флекс
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    background-color: $color-light;
+    color: $color-dark;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    background-image: none;
+    grid-template-areas:
+      "title  img"
+      "text   img"
+      "button img";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-image: linear-gradient(to left, #64a83c, #62a53a), url("../../images/background/background-cat-desktop@2x.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 680px;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .promo__title {
+  font-family: $secondary-font;
+  font-weight: 400;
   line-height: 36px;
   font-size: 36px;
   text-align: center;
   color: $color-light;
   order: -3;
+  margin: 0 0 25px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
     text-align: start;
-    padding-left: 120px;
+    padding-left: 20px;
+    margin: 0 0 37px 70px;
+    line-height: 60px;
+    font-size: 60px;
+    max-width: 554px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: title;
     display: block;
+    padding-left: 50px;
+    margin-left: 0;
   }
 }
-
 
 .promo__description {
   font-family: $secondary-font;
@@ -34,51 +97,62 @@
   text-transform: uppercase;
   text-align: center;
   order: -2;
+  margin: 0 0 28px;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
     text-align: start;
-    padding-left: 120px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 50px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: text;
+    margin-left: 0;
+    padding-left: 50px;
   }
 }
 
 .promo__image {
-  /* background-color: transparent; */
-  //display: flex;
-  //display: grid;
-  margin: 0 auto;
+  margin: 0 auto 3px;
   display: block;
 
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
+  @media (min-width: $tablet-width) {
+    margin: -86px 0;
+    z-index: 2;
+
+    max-width: fit-content;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    grid-area: img;
-    grid-column: 3/-1;
+    position: absolute;
+    left: 37%;
+    bottom: -60%;
+    z-index: 1;
   }
 }
 
-
 .promo__button {
-  margin-left: 20px;
-  margin-right: 20px;
+  display: block;
+  margin: 0 auto;
+  min-width: 100%;
+  line-height: 20px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
-    width: 244px;
+    min-width: 244px;
     order: -1;
-    padding: 14px 10px;
+    padding: 15px 10px;
     font-size: 20px;
     line-height: 26px;
-    margin-left: 120px;
+    margin-left: 90px;
+    z-index: 4;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: button;
+    margin-left: 50px;
   }
 }

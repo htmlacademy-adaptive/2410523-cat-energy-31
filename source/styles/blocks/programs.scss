@@ -9,9 +9,11 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
+    padding-top: 82px;
+    margin-top: 189px;
   }
 }
 
@@ -20,25 +22,31 @@
   margin-bottom: 20px;
   position: relative;
   display: grid;
-  grid-template-columns: 78px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-template-areas:
     "before title"
     "text   text"
     "link   link";
   align-items: start;
-  padding: 0 20px;
+  padding: 6px 19px;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
-    width: 708px;// верно ли ?
     grid-template-columns: 340px 1fr;
     grid-template-areas:
       "title before"
       "text  before"
       "link  before";
+    padding: 71px 63px 43px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    padding: 40px 30px 56px 52px;
+  }
+}
+
+.programs__card--slim {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    margin-top: 69px;
   }
 }
 
@@ -47,7 +55,7 @@
   width: 50px;
   height: 53px;
   display: flex;
-  background-image: url("/icons/stack.svg#cat-sitting");
+  background-image: url("../../icons/stack.svg#cat-sitting");
   background-position: center;
   grid-area: before;
   align-self: center;
@@ -56,11 +64,35 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 211px;
+    margin-left: auto;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 106px;
+    margin-bottom: 33px;
+  }
+}
+
+.programs__card--set {
+  @media (max-width: ($tablet-width)-1) {
+    padding: 9px 21px 9px 12px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    margin-top: 7px;
+    padding: 79px 27px 35px 52px;
+  }
+}
+
+.programs__card-description-text {
+  min-width: 227px;
+  padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 382px;
+    padding: 0;
   }
 }
 
@@ -69,19 +101,22 @@
   width: 67px;
   height: 50px;
   display: block;
-  background-image: url("/icons/stack.svg#cat-stand");
+  background-image: url("../../icons/stack.svg#cat-stand");
   grid-area: before;
   align-self: center;
   background-repeat: no-repeat;
+  padding: 1px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
+    margin: 14px 0 48px 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
+    margin: 0 0 44px -19px;
   }
 }
 
@@ -90,15 +125,35 @@
   line-height: 37px;
   grid-area: title;
   justify-self: start;
+  color: $color-dark;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 35px 0 0 86px;
+  }
 }
 
 .programs__card-description {
   grid-area: text;
-  margin-bottom: 0;
+  margin: 6px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
-    border: none;
+    margin-bottom: 38px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+    font-size: 15px;
+    max-width: 455px;
   }
 }
 
@@ -109,10 +164,14 @@
   height: 1px;
   background-color: #d9d9d9;
   margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .programs__card-link {
-  color: inherit;
+  color: $color-dark;
   line-height: 16px;
   font-size: 16px;
   text-align: center;
@@ -121,14 +180,19 @@
   gap: 15px;
   align-items: center;
   grid-area: link;
-  padding-top: 15px;
-  padding-bottom: 13px;
+  padding: 17px 2px 13px;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 1px 4px;
+  }
 
   &:hover::after {
     width: 32px;
     height: 12px;
-    mask-image: url("/icons/stack.svg#cursor-hover");
+    mask-image: url("../../icons/stack.svg#cursor-hover");
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-dark;
@@ -143,7 +207,7 @@
 
 .programs__card-link::after {
   content: "";
-  mask-image: url("/icons/stack.svg#cursor");
+  mask-image: url("../../icons/stack.svg#cursor");
   display: block;
   width: 24px;
   height: 12px;

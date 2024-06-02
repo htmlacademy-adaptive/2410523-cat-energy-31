@@ -7,13 +7,32 @@
   color: $color-dark;
   text-align: center;
   font-family: $secondary-font;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
 }
 
 .subscribe__title {
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+    margin-top: 96px;
+  }
 }
 
 .subscribe__description {
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+  }
 }
+

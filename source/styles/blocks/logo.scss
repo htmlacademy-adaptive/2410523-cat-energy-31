@@ -10,6 +10,11 @@
 
 .logo__image-text {
   @media (min-width: $tablet-width) {
-    margin-right: 94px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }

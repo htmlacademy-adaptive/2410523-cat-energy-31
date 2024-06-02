@@ -3,6 +3,12 @@
 
 .title-h3 {
   font-family: $secondary-font;
-  color: $color-dark-special;
   text-align: center;
+  font-weight: 400;
+  color: $color-dark-special;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    font-size: 20px;
+  }
 }

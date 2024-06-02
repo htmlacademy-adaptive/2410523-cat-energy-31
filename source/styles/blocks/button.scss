@@ -6,19 +6,28 @@
   padding: 10px 20px;
   min-width: 169px;
   min-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button--primary {
   color: $color-light;
-  background-color: $color-light-special;
+  background-color: $color-light-third;
 
   &:hover {
-    background-color: $color-hover-special;
+    background-color: $color-hover-but;
   }
 
   &:active {
-    background-color: $color-hover-special;
+    background-color: $color-hover-but;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
@@ -28,6 +37,10 @@
 
   &:hover,
   &:active {
-    background-color: $color-hover-other;
+    background-color: $color-hover-act;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
