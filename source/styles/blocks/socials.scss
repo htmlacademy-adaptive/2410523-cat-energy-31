@@ -1,0 +1,66 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.socials {
+  list-style-type: none;
+  display: flex;
+  margin: 3px auto 0;
+  padding: 0 0 20px;
+  border-bottom: $border-light #d9d9d9;
+  min-width: 280px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 25px 10px;
+    max-width: 150px;
+  }
+}
+
+.socials::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.socials__item {
+  margin-left: 24px;
+}
+
+.socials__item:nth-last-child(3n) {
+  margin-left: 0;
+}
+
+.socials__link {
+  width: 40px;
+  height: 40px;
+
+  &:hover::after {
+    background-color: $color-light-third;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.socials__link::after {
+  content: "";
+  width: 28px;
+  height: 22px;
+  background-color: $color-socials;
+  display: block;
+}
+
+.socials__link--vk::after {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+}
+
+.socials__link--youtube::after {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.socials__link--tg::after {
+  mask-image: url("../../icons/stack.svg#telegram");
+}

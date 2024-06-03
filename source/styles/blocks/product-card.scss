@@ -1,0 +1,249 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.product-card {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-hover-act;
+      position: absolute;
+      top: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
+  }
+}
+
+.product-card:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#ffffff 14%, #f2f2f2 0%);
+  }
+}
+
+.product-card--other {
+  padding: 80px 5px 27px 2px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: $border-fat $color-light-primary;
+    margin-top: 70px;
+    padding: 24px 10px 24px 7px;
+  }
+
+  &::after {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #ebebeb;
+      position: absolute;
+      top: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
+  }
+}
+
+.product-card--other::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#plus");
+  width: 30px;
+  height: 30px;
+  margin: 25px 122px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 84px;
+    margin-left: 84px;
+    margin-bottom: 40px;
+  }
+}
+
+.product-card__title {
+  display: block;
+  font-family: $secondary-font;
+  color: $color-dark-special;
+  margin: 0 auto;
+  max-width: 210px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 135px;
+    margin-left: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 2px 19px;
+  }
+}
+
+.product-card__link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__link--title {
+  display: block;
+  text-transform: uppercase;
+  max-width: 72px;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    max-width: 132px;
+    text-align: center;
+  }
+}
+
+.product-card__button {
+  width: 280px;
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  height: 41px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin-bottom: 40px;
+    margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.product-card__button-other {
+  margin: 4px 0 0;
+  text-align: center;
+  padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.product-card__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 2px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__informs {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
+}
+
+.product-card__inform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 16px;
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
+  }
+}
+
+.product-card__inform::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #cdcdcd;
+    width: 200%;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
+}
+
+.product-card__inform-text {
+  margin: 0;
+}
+
+.product-card__inform-value {
+  text-align: end;
+  margin: 0;
+}
+
+.product-card__text {
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 275px;
+  grid-column: 1/-1;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 18px;
+    font-size: 16px;
+    min-width: 170px;
+  }
+}
+
+.product-card__text--other {
+  @media (min-width: $tablet-width) {
+    margin: 13px 10px 64px;
+    padding: 10px 29px 10px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 205px;
+    margin: 13px -9px 74px;
+    padding: 10px 20px 10px 7px;
+  }
+}
