@@ -30,7 +30,7 @@
   align-items: start;
   padding: 6px 19px;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     grid-template-columns: 340px 1fr;
     grid-template-areas:
       "title before"
@@ -45,7 +45,7 @@
 }
 
 .programs__card--slim {
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     margin-top: 69px;
   }
 }
@@ -76,11 +76,11 @@
 }
 
 .programs__card--set {
-  @media (max-width: ($tablet-width)-1) {
+  @media (max-width: $max-mobile-width) {
     padding: 9px 21px 9px 12px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     margin-top: 7px;
     padding: 79px 27px 35px 52px;
   }
@@ -151,7 +151,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     font-size: 15px;
     max-width: 455px;
   }

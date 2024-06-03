@@ -7,7 +7,7 @@
   margin-bottom: 22px;
 
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     background-color: $color-light;
     color: $color-dark;
     display: flex;
@@ -40,7 +40,7 @@
   position: absolute;
   z-index: -1;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     background-image: none;
   }
 
