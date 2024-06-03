@@ -2,14 +2,10 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-image: linear-gradient(to left, #64a83c, rgba(98, 165, 58, 0.85)), url("../../images/background/background-cat @2x.png");
   background-repeat: no-repeat;
   background-size: auto 302px;
-  background-position: center top;
-  display: flex; //убрать флекс
-  flex-flow: column;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     background-color: $color-light;
@@ -17,33 +13,53 @@
     display: flex;
     flex-direction: column;
     background-image: none;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    background-image: none;
-    grid-template-areas:
-      "title  img"
-      "text   img"
-      "button img";
+    background-size: auto 694px;
+    padding-top: 23px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .promo::before {
+.promo::before {
+  content: "";
+  display: block;
+  background-image:
+    linear-gradient(to bottom, rgb(255 255 255 / 63%)  0%, rgb(104 183 56 / 80%) 0%),
+    image-set(url("../../images/background/background-cat\ @2x.jpg") type("image/jpg") 2x,
+    url("../../images/background/background-cat @1x.jpg") type("image/jpg") 1x,
+    url("../../images/background/background-cat @1x.webp") type("image/webp") 1x,
+    url("../../images/background/background-cat @2x.webp") type("image/webp") 2x),
+    linear-gradient(to bottom, rgb(255 255 255 / 93%) 0%, #4f4e54 0%);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 302px;
+  background-position: center top;
+  height: 302px;
+  position: absolute;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
     content: "";
-    position: absolute;
-    background-size: contain;
-    background-image: linear-gradient(to left, #64a83c, #62a53a), url("../../images/background/background-cat-desktop@2x.png");
-    background-position: center bottom;
+    background-image:
+      linear-gradient(to bottom, rgb(255 255 255 / 63%) 0%, rgb(104 183 56 / 80%) 0%),
+      image-set(url("../../images/background/cat-desktop@2x.jpg") type("image/jpg") 2x,
+      url("../../images/background/cat-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/background/cat-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/background/cat-desktop@2x.webp") type("image/webp") 2x),
+      linear-gradient(to bottom, rgb(255 255 255 / 93%) 0%, #4f4e54 0%);
     background-repeat: no-repeat;
-    width: 720px;
-    height: 680px;
-    z-index: -1;
-    top: 0;
+    background-size: auto 694px;
+    background-position: center top;
+    width: 50%;
+    height: 694px;
     right: 0;
+    top: 0;
     display: block;
   }
 }

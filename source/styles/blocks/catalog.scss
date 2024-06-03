@@ -13,11 +13,36 @@
   line-height: 36px;
   font-weight: 400;
   color: $color-dark;
-  padding-left: 30px;
-  margin-bottom: 84px;
+  margin: 0 0 20px;
+  font-family: $secondary-font;
+  position: relative;
+  padding: 28px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 89px;
+  }
+
+  &::before {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-hover-act;
+      position: absolute;
+      top: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
   }
 }
 
@@ -25,17 +50,36 @@
 .catalog__list {
   list-style-type: none;
   padding: 0;
+  margin: 0 0 24px;
+  position: relative;
+
+
+  &::after {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #ebebeb;
+      position: absolute;
+      bottom: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 17px; //разобратьсяс отступами
+    gap: 71px 60px;
+    justify-content: center;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 73px 80px;
   }
 }
 
@@ -44,28 +88,13 @@
   font-size: 16px;
 }
 
-.catalog__prices-title::before {
-  content: "";
-  display: block;
-  background-image: url("/icons/stack.svg#plus");
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-  }
-}
-
 .catalog__item {
-  width: 320px;
-  padding: 20px 20px 25px;
+  padding: 23px 0 25px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     padding: 0;
-    background-color: $color-light-primary;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,3 +102,24 @@
   }
 }
 
+.catalog__item:last-child::before {
+  @media (min-width: $tablet-width) {
+    background-color: $color-light;
+  }
+}
+
+.catalog__item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    padding: 0 38px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    padding: 0;
+    margin: 0 auto 16px;
+  }
+}
