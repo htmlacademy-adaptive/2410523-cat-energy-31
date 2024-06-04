@@ -4,6 +4,10 @@
 .contacts {
   margin-bottom: 0;
 
+  @media (min-width: $tablet-width) {
+    background-color: $color-light-primary;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     position: relative;
@@ -73,6 +77,11 @@
 }
 
 .contacts__map {
+  min-width: 100%;
+  height: 100%;
+}
+
+.contacts__map iframe {
   min-width: 100%;
   height: 100%;
   vertical-align: middle;
