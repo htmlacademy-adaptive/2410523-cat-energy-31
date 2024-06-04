@@ -24,8 +24,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0 24px 30px;
     margin-bottom: 70px;
     border-top: none;
   }
@@ -61,9 +60,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 91px 60px;
+    gap: 72px 60px;
     justify-content: center;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,7 +103,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    padding: 0 38px 16px;
+    padding: 0 38px 38px;
   }
 
   @media (min-width: $desktop-width) {
