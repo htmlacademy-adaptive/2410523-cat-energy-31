@@ -1,7 +1,7 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.programs {
+.programs__wrapper {
   background-color: $color-light;
   color: $color-dark;
   display: flex;
