@@ -21,11 +21,15 @@
       overflow: hidden;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 37px;
+  }
 }
 
 .product-card:not(:last-child) {
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 14%, #f2f2f2 0%);
+    background-image: linear-gradient(#ffffff 16%, #f2f2f2 0%);
   }
 }
 
@@ -36,21 +40,7 @@
   @media (min-width: $tablet-width) {
     border: $border-fat $color-light-primary;
     margin-top: 70px;
-    padding: 24px 10px 24px 7px;
-  }
-
-  &::after {
-    @media (max-width: $max-tablet-width) {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: #ebebeb;
-      position: absolute;
-      top: 0;
-      box-shadow: -100vw 0 0 0 #ebebeb;
-      overflow: hidden;
-    }
+    padding: 25px 0 8px;
   }
 }
 
@@ -66,13 +56,11 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin-bottom: 51px;
+    margin: 25px 128px 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 84px;
-    margin-left: 84px;
-    margin-bottom: 40px;
+    margin: 0 84px 40px 58px;
   }
 }
 
@@ -126,21 +114,21 @@
 }
 
 .product-card__button {
-  width: 280px;
-  display: inline-block;
+  //width: 280px;
+  display: block;
   padding-top: 13px;
-  padding-bottom: 13px;
-  height: 41px;
-  margin-top: auto;
+  padding-bottom: 9px;
+  //height: 41px;
+  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    margin-bottom: 40px;
-    margin-left: 37px;
+    // width: 250px;
+    // margin-bottom: 40px;
+    // margin-left: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 170px;
+    //width: 170px;
   }
 }
 
@@ -238,8 +226,7 @@
 
 .product-card__text--other {
   @media (min-width: $tablet-width) {
-    margin: 13px 10px 64px;
-    padding: 10px 29px 10px 10px;
+    padding: 14px 30px 28px 31px;
   }
 
   @media (min-width: $desktop-width) {
