@@ -197,7 +197,7 @@
   }
 }
 
-.navigation__open {
+.navigation__button--open {
   display: block;
   width: 40px;
   height: 40px;
@@ -218,7 +218,7 @@
   }
 }
 
-.navigation__open::before {
+.navigation__button--open::before {
   content: "";
   width: 28px;
   height: 24px;
@@ -228,7 +228,7 @@
   display: block;
 }
 
-.navigation__close {
+.navigation__button--close {
   display: block;
   width: 40px;
   height: 40px;
@@ -241,7 +241,7 @@
   }
 }
 
-.navigation__close::before {
+.navigation__button--close::before {
   content: "";
   width: 18px;
   height: 18px;

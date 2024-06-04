@@ -11,6 +11,10 @@
 }
 
 .contacts__wrapper {
+  //sss
+}
+
+.contacts__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -25,8 +29,7 @@
     position: relative;
     background-color: $color-light;
     max-width: 565px;
-    top: 93px;
-    right: 324px;
+    margin-top: 95px;
     z-index: 1;
   }
 }
@@ -73,12 +76,13 @@
   }
 }
 
-.contacts__map-iframe {
-  width: 100%;
-  height: 362px;
+.contacts__map {
+  min-width: 100%;
+  height: 100%;
+  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
