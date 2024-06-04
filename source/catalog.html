@@ -6,11 +6,11 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
-  <link rel="icon" href="favicons/192.png"><!-- 192×192 -->
-  <link rel="icon" href="favicons/512.png"><!-- 512×512 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="icon" href="favicons/192.png">
+  <link rel="icon" href="favicons/512.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -282,14 +282,15 @@
             <a class="product-card__title
           title-h3" href="#">Показать ещё 100500 товаров</a>
             <p class="product-card__text product-card__text--other ">На самом деле вкусов гораздо больше!</p>
-            <a class="product-card__button button button--secondary product-card__button-other" href="#">Показать все</a>
           </div>
+          <a class="product-card__button button button--secondary product-card__button-other" href="#">Показать все</a>
+
         </li>
       </ul>
     </section>
-    <section class="subproducts wrapper">
+    <section class="subproducts">
       <h2 class="subproducts__title title-h2 title-h2--width-border">Дополнительные товары</h2>
-      <div class="subproducts__wrapper">
+      <div class="subproducts__wrapper wrapper">
         <ul class="subproducts__list">
           <li class="subproducts__item">
             <a class="subproducts__link title-h3" href="#">Сахарозаменитель</a>
@@ -329,13 +330,15 @@
         </div>
       </div>
     </section>
-    <section class="subscribe wrapper">
+    <section class="subscribe">
       <h2 class="subscribe__title title-h2 title-h2--width-border">Акции и новинки</h2>
-      <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="email">Подписаться на новости</label>
-        <input class="form__input" type="email" name="email" placeholder="Введите e-mail" id="email" value="kuklachev@gmail.com" required><button class="form__button button button--primary" type="submit">Подписаться</button>
-      </form>
+      <div class="subscribe__wrapper wrapper">
+        <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="email">Подписаться на новости</label>
+          <input class="form__input" type="email" name="email" placeholder="Введите e-mail" id="email" value="kuklachev@gmail.com" required><button class="form__button button button--primary" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper wrapper">

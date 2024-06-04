@@ -11,14 +11,15 @@
   position: relative;
   background-color: $color-light;
   width: fit-content;
-  box-shadow: 40px 0 0 0 $color-light;
+  box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
   margin-bottom: 36px;
   margin-top: 0;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
     margin-bottom: 82px;
-    box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
+
     line-height: 32px;
     font-size: 32px;
   }

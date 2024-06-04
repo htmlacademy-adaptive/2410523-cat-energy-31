@@ -7,7 +7,11 @@
   color: $color-dark;
   text-align: center;
   font-family: $secondary-font;
-  padding: 40px 20px 39px;
+  padding: 40px 0 35px;
+}
+
+.subscribe__wrapper {
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 31px 31px 30px;
@@ -26,11 +30,11 @@
   position: relative;
   width: fit-content;
   background-color: $color-light;
-  box-shadow: 40px 0 0 0 $color-light;
+  box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 67px 40px;
-    box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
     font-size: 32px;
     line-height: 32px;
   }

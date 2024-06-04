@@ -6,20 +6,9 @@
   line-height: 20px;
   display: flex;
   flex-direction: column;
-  position: relative;
 
-  &::before {
-    @media (max-width: $max-mobile-width) {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $color-hover-act;
-      position: absolute;
-      top: 0;
-      box-shadow: -100vw 0 0 0 #ebebeb;
-      overflow: hidden;
-    }
+  @media (max-width: $max-mobile-width) {
+    border-top: $border-light $color-hover-act;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +23,7 @@
 }
 
 .product-card--other {
-  padding: 80px 5px 27px 2px;
+  padding: 25px 20px 26px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -50,7 +39,7 @@
   background-image: url("../../icons/stack.svg#plus");
   width: 30px;
   height: 30px;
-  margin: 25px 122px;
+  margin: 0 auto 24px;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
@@ -71,6 +60,7 @@
   margin: 0 auto;
   max-width: 210px;
   text-transform: uppercase;
+  grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
     max-width: 135px;
@@ -119,7 +109,8 @@
   padding-top: 13px;
   padding-bottom: 9px;
   //height: 41px;
-  margin-top: 18px;
+  margin: 0;
+  grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
     // width: 250px;
@@ -133,9 +124,9 @@
 }
 
 .product-card__button-other {
-  margin: 4px 0 0;
+  margin: 10px 0 0;
   text-align: center;
-  padding-left: 14px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     padding-left: 10px;
@@ -215,7 +206,8 @@
   text-align: center;
   max-width: 275px;
   grid-column: 1/-1;
-  margin-top: 10px;
+  margin: 0;
+  padding: 8px;
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
