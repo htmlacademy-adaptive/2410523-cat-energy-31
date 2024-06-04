@@ -39,7 +39,7 @@
   padding: 15px 0 18px;
 
   &::before {
-    @media (max-width: ($tablet-width)-1) {
+    @media (max-width: $max-tablet-width) {
       content: "";
       display: block;
       width: 100%;
@@ -117,7 +117,7 @@
   margin-bottom: 13px;
   padding: 0;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width) - 1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 10px 38px 1px;
     border: $border-primary;
   }

@@ -9,7 +9,7 @@
   position: relative;
 
   &::before {
-    @media (max-width: ($tablet-width)-1) {
+    @media (max-width: $max-mobile-width) {
       content: "";
       display: block;
       width: 100vw;
@@ -40,7 +40,7 @@
   }
 
   &::after {
-    @media (max-width: ($tablet-width)-1) {
+    @media (max-width: $max-tablet-width) {
       content: "";
       display: block;
       width: 100vw;
