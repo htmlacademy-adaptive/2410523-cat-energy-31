@@ -75,7 +75,7 @@
   }
 }
 
-.subproducts__item:not(:last-child)::after {
+.subproducts__item::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -86,7 +86,7 @@
 
   @media (min-width: $desktop-width) {
     box-shadow: none;
-    width: 300%;
+    width: 322%;
   }
 }
 
@@ -94,7 +94,6 @@
   line-height: 16px;
   font-size: 16px;
   color: $color-dark-special;
-  font-weight: 700;
   text-transform: uppercase;
   display: block;
   padding-bottom: 12px;
@@ -125,7 +124,7 @@
   @media (min-width: $desktop-width) {
     width: 896px;
     display: block;
-    border-bottom: $border-primary;
+
     border-top: $border-primary;
     margin-top: 0;
   }
