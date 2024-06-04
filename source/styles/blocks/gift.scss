@@ -57,7 +57,7 @@
   font-size: 16px;
   padding: 10px 20px;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
