@@ -6,17 +6,18 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0 0 20px;
+  padding: 20px 0;
   border-bottom: $border-light #d9d9d9;
+  border-top: $border-light #d9d9d9;
   min-width: 280px;
   justify-content: center;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0 0 0 60px;
     max-width: 170px;
     margin: 0;
-    gap: 20px;
   }
 }
 

@@ -28,10 +28,10 @@
         </picture>
         <img class="logo__image-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип текст кот Energy">
       </a>
-      <button class="navigation__button--open " type="button"><!-- navigation__button--close -->
+      <button class="navigation__button-open" type="button"><!-- navigation__button-close -->
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <div class="navigation__menu navigation__menu--close "><!-- navigation__menu--open -->
+      <div class="navigation__menu navigation__menu--close">
         <ul class="navigation__menu-list">
           <li class="navigation__menu-item">
             <a class="navigation__menu-link navigation__menu-link--current" href="#">Главная</a>
@@ -145,6 +145,9 @@
       <div class="contacts__map">
         <noscript>
           <picture>
+            <source media="(min-width:1440px)" width="1440" height="400" type="image/webp" srcset="images/map/map-desktop@1x.webp 1x,  images/map/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+            <source width="320" height="362" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x ">
             <img class="contacts__map-image" src="images/map/map-mobile@2x.png" srcset="images/map/map-mobile@1x.png 1x, images/map/map-mobile@2x.png 2x" width="320" height="362" alt="метка на карте для сотрудничества">
