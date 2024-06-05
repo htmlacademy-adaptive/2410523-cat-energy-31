@@ -1,12 +1,6 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.subproducts {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
-  }
-}
-
 .subproducts__title {
   position: relative;
   background-color: $color-light;
@@ -28,7 +22,7 @@
     line-height: 40px;
     font-size: 40px;
     text-align: start;
-    margin-left: 0;
+    padding-left: 110px;
     margin-bottom: 79px;
   }
 }
