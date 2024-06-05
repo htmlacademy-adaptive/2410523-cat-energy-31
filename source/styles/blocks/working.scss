@@ -2,22 +2,11 @@
 @use "../common/variables.scss";
 
 .working {
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
 
     padding-bottom: 8px;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      position: absolute;
-      background-color: #e6e6e6;
-      box-shadow: -100vw 0 0 0 #e6e6e6;
-      overflow: hidden;
-      bottom: 0;
-    }
+    border-bottom: $border-light #e6e6e6;
   }
 }
 
@@ -31,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 60px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {

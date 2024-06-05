@@ -2,6 +2,8 @@
 @use "../common/variables.scss";
 
 .catalog {
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
     padding-top: 17px;
@@ -16,33 +18,20 @@
   margin: 0 0 20px;
   font-family: $secondary-font;
   position: relative;
-  padding: 28px 0 20px;
+  padding: 28px 0 20px 20px;
+  border-top: $border-light $color-hover-act;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0 24px 30px;
     margin-bottom: 70px;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 0 0 30px;
     margin-bottom: 89px;
-  }
-
-  &::before {
-    @media (max-width: ($tablet-width)-1) {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $color-hover-act;
-      position: absolute;
-      top: 0;
-      box-shadow: -100vw 0 0 0 #ebebeb;
-      overflow: hidden;
-    }
   }
 }
 
@@ -55,7 +44,7 @@
 
 
   &::after {
-    @media (max-width: ($tablet-width)-1) {
+    @media (max-width: $max-mobile-width) {
       content: "";
       display: block;
       width: 100vw;
@@ -71,15 +60,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 71px 60px;
+    gap: 72px 60px;
     justify-content: center;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 73px 80px;
+    gap: 75px 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -89,12 +79,11 @@
 }
 
 .catalog__item {
-  padding: 23px 0 25px;
+  padding: 23px 0;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     padding: 0;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,15 +100,15 @@
 .catalog__item-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    padding: 0 38px 16px;
+    padding: 0 38px 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 170px;
     padding: 0;
-    margin: 0 auto 16px;
   }
 }

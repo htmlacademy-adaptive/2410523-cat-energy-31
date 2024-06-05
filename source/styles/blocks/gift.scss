@@ -44,7 +44,7 @@
     margin-left: auto;
     background-size: auto 100%;
     margin-top: 0;
-    height: 94%;
+    height: 92%;
   }
 }
 
@@ -57,7 +57,7 @@
   font-size: 16px;
   padding: 10px 20px;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;

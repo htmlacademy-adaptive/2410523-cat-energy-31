@@ -1,24 +1,19 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.subproducts {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
-  }
-}
-
 .subproducts__title {
   position: relative;
   background-color: $color-light;
   width: fit-content;
-  box-shadow: 40px 0 0 0 $color-light;
+  box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
   margin-bottom: 36px;
   margin-top: 0;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
+    padding-left: 70px;
     margin-bottom: 82px;
-    box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
+
     line-height: 32px;
     font-size: 32px;
   }
@@ -27,7 +22,7 @@
     line-height: 40px;
     font-size: 40px;
     text-align: start;
-    margin-left: 0;
+    padding-left: 110px;
     margin-bottom: 79px;
   }
 }
@@ -39,7 +34,7 @@
   padding: 15px 0 18px;
 
   &::before {
-    @media (max-width: ($tablet-width)-1) {
+    @media (max-width: $max-mobile-width) {
       content: "";
       display: block;
       width: 100%;
@@ -75,7 +70,7 @@
   }
 }
 
-.subproducts__item:not(:last-child)::after {
+.subproducts__item::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -86,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     box-shadow: none;
-    width: 300%;
+    width: 322%;
   }
 }
 
@@ -94,7 +89,6 @@
   line-height: 16px;
   font-size: 16px;
   color: $color-dark-special;
-  font-weight: 700;
   text-transform: uppercase;
   display: block;
   padding-bottom: 12px;
@@ -117,7 +111,7 @@
   margin-bottom: 13px;
   padding: 0;
 
-  @media (min-width: $tablet-width) and (max-width: ($desktop-width) - 1) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 10px 38px 1px;
     border: $border-primary;
   }
@@ -125,7 +119,7 @@
   @media (min-width: $desktop-width) {
     width: 896px;
     display: block;
-    border-bottom: $border-primary;
+
     border-top: $border-primary;
     margin-top: 0;
   }
