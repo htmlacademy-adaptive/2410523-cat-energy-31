@@ -18,11 +18,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 30px 0  26px;
+  padding: 30px 3px 26px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 60px 40px 62px;
+    padding: 64px 40px 57px;
   }
 
   @media (min-width: $desktop-width) {
