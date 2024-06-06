@@ -73,9 +73,7 @@
 }
 
 .navigation__menu--close {
-
   display: none;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -224,6 +222,7 @@
   background-color: $color-dark;
   cursor: pointer;
   margin-left: auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -262,6 +261,9 @@
   display: block;
 }
 
+.navigation__menu-close.navigation__menu--nojs {
+  display: block;
+}
 
 .navigation__menu--nojs {
   @media (max-width: $max-mobile-width) {
