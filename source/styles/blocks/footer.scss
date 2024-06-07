@@ -19,12 +19,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 58px 23px 35px 30px;
+    padding: 57px 23px 40px 30px;
     gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 30px 80px;
+    padding: 64px 30px 80px;
   }
 }
 
@@ -102,9 +102,7 @@
 }
 
 .footer__logo {
-
-  border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0 0;
+  padding: 22px 0 0;
   justify-content: center;
   display: flex;
 
